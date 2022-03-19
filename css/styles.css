@@ -26,7 +26,7 @@ button {
 }
 
 /* Логотип */
-.logo {
+.logo-header {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -35,8 +35,23 @@ button {
   text-decoration: none;
 }
 
+.logo-footer {
+  display: inline-block;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-decoration: none;
+
+  margin-bottom: 20px;
+}
+
 .logo-accent {
   color: var(--accent-color);
+}
+.logo-accent-footer {
+  color: var(--primary-white-color);
 }
 
 /* Навигация сайта */
@@ -47,10 +62,22 @@ button {
   line-height: 1.14;
   color: var(--title-text-color);
   text-decoration: none;
+
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.site-nav {
+  padding: 0;
+  border: 0;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
   color: var(--accent-color);
 }
 
@@ -63,12 +90,14 @@ button {
   line-height: 1.14;
 }
 
-.contacts-header .link:hover,
-.contacts-header .link:focus {
-  color: var(--accent-color);
+.contacts-header {
+  padding: 0;
+  border: 0;
+  margin-bottom: 0;
 }
 
-.site-nav .link.current {
+.contacts-header .link:hover,
+.contacts-header .link:focus {
   color: var(--accent-color);
 }
 
@@ -80,15 +109,61 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero-button {
+  display: inline-block;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-decoration: none;
+  /* text-align: center; */
+
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 
 /* Основные секции */
-.section .section-title {
+.section-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-bottom: 0;
+}
+
+.section-title.feature{
+margin-bottom: 0;
+color: rgb(30, 255, 0);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.works {
+  padding-top: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 2px solid red;
 }
 
 /*Наши особенности*/
@@ -109,6 +184,18 @@ button {
 /*Наша команда*/
 .team-list .name {
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.team-list .photo {
+  margin-bottom: 30px;
+}
+
+.team-list .position {
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 /* Страница Портфолио */
@@ -117,6 +204,12 @@ button {
 .filters-button {
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
+
+  border-radius: 4px;
+  padding: 6px 12px;
+  border: none;
+
+  text-align: center;
 }
 .filters-button:hover,
 .filters-button:focus,
@@ -143,12 +236,19 @@ button {
   background-color: #2f303a;
 }
 
+.footer .container{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .link-adress {
   color: var(--primary-white-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
+  margin-bottom: 9px;
 }
 .link-contacts {
   color: rgba(255, 255, 255, 0.6);
@@ -156,4 +256,5 @@ button {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-}
+  
+  
