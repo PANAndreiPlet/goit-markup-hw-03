@@ -19,11 +19,15 @@ body {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 button {
   cursor: pointer;
 }
+
+
 
 /* Логотип */
 .logo-header {
@@ -55,6 +59,12 @@ button {
 }
 
 /* Навигация сайта */
+.site-nav {
+  display: flex;
+  padding: 0;
+  border: 0;
+}
+
 .site-nav .link {
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -62,14 +72,6 @@ button {
   line-height: 1.14;
   color: var(--title-text-color);
   text-decoration: none;
-
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-.site-nav {
-  padding: 0;
-  border: 0;
 }
 
 .site-nav .link:hover,
@@ -79,6 +81,10 @@ button {
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+.site-nav .item + .item {
+margin-left: 50px;
 }
 
 .contacts-header .link {
@@ -184,9 +190,13 @@ color: rgb(30, 255, 0);
 /*Наша команда*/
 .team-list .name {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
   margin-top: 0;
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .team-list .photo {
@@ -194,16 +204,26 @@ color: rgb(30, 255, 0);
 }
 
 .team-list .position {
+  font-size: 16px;
+  line-height: 1.19;
+
+  margin-top: 0;
   margin-bottom: 30px;
   text-align: center;
 }
 
+
 /* Страница Портфолио */
 
 /* Фильтры */
+
 .filters-button {
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
 
   border-radius: 4px;
   padding: 6px 12px;
@@ -219,16 +239,46 @@ color: rgb(30, 255, 0);
 }
 
 /* Примеры работ */
-.projects-title {
-  color: var(--title-text-color);
-}
-
-.projects-desc {
-  color: var(--primary-text-color);
+.section-projects {
+  padding-top: 100px;
+  padding-bottom: 94px;
 }
 
 .projects-decor {
   text-decoration: none;
+  outline: 2px solid royalblue;  
+  display: inline-block;  
+}
+
+.projects-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.00;
+  letter-spacing: 0.06em;
+
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.projects-desc {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.projects-picture {
+  /* display: inline-block; */
+  margin-bottom: 20px;
+}
+
+h2,
+p{
+  outline: 2px solid royalblue;
 }
 
 /* Футер */
@@ -256,5 +306,4 @@ color: rgb(30, 255, 0);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  
   
